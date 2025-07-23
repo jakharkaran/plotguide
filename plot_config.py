@@ -146,6 +146,3 @@ print(f"   LaTeX support: {'✓ Enabled' if LATEX_AVAILABLE else '✗ Disabled'}
 print(f"   Default save format: {savefig_format}")
 print(f"   Contour levels: {contourLevels}")
 print(f"   Colormap: {colormap}")
-
-# Apply the parameters to matplotlib
-plt.rcParams.update(params)

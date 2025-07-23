@@ -2,14 +2,6 @@
 
 A comprehensive guide with configuration for creating publication-quality figures in Python (matplotlib)
 
-## ✨ Features
-
-- **Standardized configurations** for matplotlib with LaTeX support (with fallbacks)
-- **Publication-ready defaults** for figure dimensions, fonts, and colors
-- **Best practices** for line plots, contour plots, and multi-panel figures
-- **Cross-platform support** for Windows, macOS, and Linux (including HPC clusters)
-- **Simple integration** - just import and use
-
 ## 🚀 Quick Start
 
 1. **Clone the repository:**
