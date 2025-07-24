@@ -13,6 +13,7 @@ SMALL_SIZE = 8;
 MIDDLE_SIZE = 10;
 LARGE_SIZE = 12;
 CONTOUR_LEVELS = 100;
+SAVE_DIR = 'figures/';
 
 
 %% Example 1: Basic Line Plot
@@ -49,7 +50,7 @@ xlim([0, 2*pi]);
 ylim([-1.2, 1.2]);
 
 % 4. Save
-exportgraphics(h1, 'matlab_sample_line.svg');
+exportgraphics(h1, fullfile(SAVE_DIR, 'matlab_sample_line.svg'));
 
 
 %% Example 2: Multi-Panel Contour Plot
@@ -120,4 +121,4 @@ yticks([0, pi, 2*pi]);
 yticklabels({'0', '\pi', '2\pi'});
 % 
 % % Save figure
-exportgraphics(h2, 'matlab_sample_contour.png', 'Resolution', 600);
+exportgraphics(h2, fullfile(SAVE_DIR, 'matlab_sample_contour.svg'), 'Resolution', 600);
