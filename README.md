@@ -11,12 +11,6 @@ A comprehensive guide with configuration for creating publication-quality figure
    git clone https://github.com/yourusername/plotting_guidelines.git
    cd plotting_guidelines
    ```
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/plotting_guidelines.git
-   cd plotting_guidelines
-   ```
    
    **Or download just the `plot_config.py` file**
 
@@ -30,15 +24,17 @@ A comprehensive guide with configuration for creating publication-quality figure
    import matplotlib.pyplot as plt
    from plot_config import params, contourLevels, colormap, savefig_format
    
-   # Apply publication-quality settings
+   # Apply plot settings
    plt.rcParams.update(params)
    
    # Your plotting code here...
    ```
+4. **Follow the example script:**
+   - `examples/python_plotting_example.ipynb` - Example scripts
 
 ### MATLAB
 
-1. **Follow the example script:**
+- **Follow the example script:**
    - `examples/matlab_plotting_examples.m` - Example scripts
 
 ## 📏 Plotting Guidelines
@@ -153,23 +149,15 @@ $HOME/texlive/2024/bin/x86_64-linux/latex
 
 ## 🔍 Troubleshooting
 
-### LaTeX Issues
-- **Missing LaTeX**: The configuration automatically falls back to standard fonts
 - **Path issues**: Manually set the LaTeX PATH in Python
-
-#### Manually Set PATH Inside Python (if needed)
-If you encounter issues running LaTeX in Python, set the PATH manually:
 ```python
 import os
 os.environ["PATH"] = f"{os.environ['HOME']}/texlive/2024/bin/x86_64-linux:" + os.environ["PATH"] # use path of installed texlive
 ```
 
-
-### Common Problems
 - **Blurry figures**: Ensure DPI ≥ 600 for raster formats
 - **Large file sizes**: Use raster formats (JPG, PNG) with DPI ≥ 600 for complex plots
 - **Font inconsistencies**: Verify LaTeX installation and font availability
-
 
 ## 📊 Usage Examples (Python)
 
@@ -197,7 +185,7 @@ ax.set_ylabel('Amplitude')
 ax.legend(frameon=False)
 
 # Save
-plt.savefig(f'lineplot.{savefig_format}', dpi=600, bbox_inches='tight')
+plt.savefig(f'lineplot.svg', bbox_inches='tight')
 plt.show()
 ```
 
