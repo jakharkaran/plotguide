@@ -30,13 +30,13 @@ A comprehensive guide with configuration for creating publication-quality figure
    # Your plotting code here...
    ```
 4. **Follow the example script:**
-   - `examples/python_plotting_example.ipynb` - Example scripts
+   - `examples/python_plotting_example.ipynb` 
 
 ### MATLAB
 
 - **Follow the example script:**
-   - `examples/matlab_plotting_examples.m` - Example scripts
-
+   - `examples/matlab_plotting_examples.m`
+     
 ##  Plotting Guidelines
 
 ### Figure Dimensions
