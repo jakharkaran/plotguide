@@ -70,6 +70,8 @@ base_params = {
 # LaTeX-specific parameters (only applied if LaTeX is available)
 latex_params = {
     'text.usetex': True,                                   # Use LaTeX for text rendering
+    # 'pgf.texsystem': 'pdflatex',                         # Enable pgf backend using pdflatex
+    # 'pgf.preamble': r'\usepackage{amsmath}',             # Enable LaTeX math for pgf backend
     'text.latex.preamble': r'\usepackage{amsmath}',        # Math symbols package
     'font.family': 'serif',                                # Serif font family (Helvetica and Arial are other common fonts in sans-serif font family)
     'font.serif': ['Computer Modern Roman'],               # Specific serif font - closest to LaTeX default font

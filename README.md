@@ -1,8 +1,16 @@
 # Scientific Plotting Guidelines
 
-A comprehensive guide with configuration for creating publication-quality figures in Python (matplotlib)
+A comprehensive guide with configuration for creating publication-quality figures in Python (matplotlib) and MATLAB
 
 ## 🚀 Quick Start
+
+### Python (matplotlib)
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/plotting_guidelines.git
+   cd plotting_guidelines
+   ```
 
 1. **Clone the repository:**
    ```bash
@@ -27,6 +35,11 @@ A comprehensive guide with configuration for creating publication-quality figure
    
    # Your plotting code here...
    ```
+
+### MATLAB
+
+1. **Follow the example script:**
+   - `examples/matlab_plotting_examples.m` - Example scripts
 
 ## 📏 Plotting Guidelines
 
@@ -158,7 +171,7 @@ os.environ["PATH"] = f"{os.environ['HOME']}/texlive/2024/bin/x86_64-linux:" + os
 - **Font inconsistencies**: Verify LaTeX installation and font availability
 
 
-## 📊 Usage Examples
+## 📊 Usage Examples (Python)
 
 ### Basic Line Plot
 ```python
