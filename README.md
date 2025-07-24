@@ -48,8 +48,7 @@ A comprehensive guide with configuration for creating publication-quality figure
 ### Font Specifications
 - **8-10 pt** font size to align with typical journal text sizes
 - **LaTeX rendering** enabled when available (with automatic fallback)
-- **Computer Modern Serif** font family for consistency
-
+- **Computer Modern Serif** is closest to the LaTeX font; other commonly recommended fonts are Arial and Helvetica.
 ### Color Standards
 - **Black** (`'black'`) for ground truth or reference data
 - **Primary colors**: Black, Red (`'red'`), and Blue (`'blue'`)
@@ -57,13 +56,12 @@ A comprehensive guide with configuration for creating publication-quality figure
 ### Contour Plot Standards
 - **Colormap**: `'bwr'` (blue-white-red) with white representing zero
 - **Levels**: 100+ contour levels for publication quality (default is 20)
-- **High DPI**: Save figures with 600+ DPI for raster formats (JPG, PNG)
+- **High DPI**: Save figures with 600+ DPI in raster formats (JPG, PNG)
 
 ### Legend Formatting
 - Frameless legends: `plt.legend(frameon=False)`
-- Appropriate sizing and positioning
 
-### File Formats by Plot Type
+### File Formats
 - **Line plots**: PDF, EPS, or SVG (vector graphics preferred)
 - **Contour plots**: JPG or PNG with DPI ≥ 600
 - **Large PDF/EPS/SVG (vector graphics) files** (>2MB): Convert to high-DPI raster formats (PNG, JPG)
