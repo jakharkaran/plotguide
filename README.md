@@ -2,7 +2,7 @@
 
 A comprehensive guide with configuration for creating publication-quality figures in Python (matplotlib) and MATLAB
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Python (matplotlib)
 
@@ -37,7 +37,7 @@ A comprehensive guide with configuration for creating publication-quality figure
 - **Follow the example script:**
    - `examples/matlab_plotting_examples.m` - Example scripts
 
-## 📏 Plotting Guidelines
+##  Plotting Guidelines
 
 ### Figure Dimensions
 - **4 inches** for single-panel figures (half-page width)
@@ -72,7 +72,7 @@ A comprehensive guide with configuration for creating publication-quality figure
 - Set consistent aspect ratios for multi-panel figures
 
 
-## 💻 Installing LaTeX/TeX 
+## Installing LaTeX/TeX 
 
 ### Check LaTeX Installation
 Check if `latex` is installed:
@@ -145,7 +145,7 @@ The output should be similar to:
 $HOME/texlive/2024/bin/x86_64-linux/latex
 ```
 
-## 🔍 Troubleshooting
+##  Troubleshooting
 
 - **Path issues**: Manually set the LaTeX PATH in Python
 ```python
@@ -157,7 +157,7 @@ os.environ["PATH"] = f"{os.environ['HOME']}/texlive/2024/bin/x86_64-linux:" + os
 - **Large file sizes**: Use raster formats (JPG, PNG) with DPI ≥ 600 for complex plots
 - **Font inconsistencies**: Verify LaTeX installation and font availability
 
-## 📊 Usage Examples (Python)
+##  Usage Examples (Python)
 
 ### Basic Line Plot
 ```python
