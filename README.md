@@ -56,15 +56,15 @@ A comprehensive guide with configuration for creating publication-quality figure
 ### Contour Plot Standards
 - **Colormap**: `'bwr'` (blue-white-red) with white representing zero
 - **Levels**: 100+ contour levels for publication quality (default is 20)
-- **High DPI**: Save figures with 600+ DPI in raster formats (JPG, PNG)
+- **High DPI**: Save figures with 600+ DPI in raster formats (JPG, PNG, TIFF)
 
 ### Legend Formatting
 - Frameless legends: `plt.legend(frameon=False)`
 
 ### File Formats
 - **Line plots**: PDF, EPS, or SVG (vector graphics preferred)
-- **Contour plots**: JPG or PNG with DPI ≥ 600
-- **Large PDF/EPS/SVG (vector graphics) files** (>2MB): Convert to high-DPI raster formats (PNG, JPG)
+- **Contour plots**: JPG, PNG or TIFF with DPI ≥ 600
+- **Large PDF/EPS/SVG (vector graphics) files** (>2MB): Convert to high-DPI raster formats (PNG, JPG, TIFF)
 
 ### Best Practices
 - **Always save figures** rather than copying from Jupyter notebooks (higher quality)
@@ -154,7 +154,7 @@ os.environ["PATH"] = f"{os.environ['HOME']}/texlive/2024/bin/x86_64-linux:" + os
 ```
 
 - **Blurry figures**: Ensure DPI ≥ 600 for raster formats
-- **Large file sizes**: Use raster formats (JPG, PNG) with DPI ≥ 600 for complex plots
+- **Large file sizes**: Use raster formats (JPG, PNG, TIFF) with DPI ≥ 600 for complex plots
 - **Font inconsistencies**: Verify LaTeX installation and font availability
 
 ##  Usage Examples (Python)
